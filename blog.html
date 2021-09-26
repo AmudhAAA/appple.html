@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDessert Blog</title>
+    <link rel="icon" href="Images/flat+version+svg+ice+cream-1319964483943937255_0.svg"/>
+    <link rel="stylesheet" href="css/blog.css">
+  </head>
+        <body>
+        <div class="wrapper">
+            <div class="nav" id="mynav">
+              <a href="index.html" >Home</a>
+              <a href="News.html">News</a>
+              <a href="blog.html"class="active">Blog page</a>
+              <a href="About.html">About</a>
+              <a href="Contact.html">Contact</a>
+                <!-- Executes myFunction when the user clicks on hamburger.png-->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <img src= "Images/hamburger.png" width=20px alt="">
+                </a>
+            
+              </div>
+              
+             <div class="header" id="myheader">
+                <img src="Images/coco.jpg" class="headerimg" alt="">
+                <h1>Dessert Blog</h1>
+             </div>
+             <button onclick="myFunctiono()" class="content">Content</button>
+             <div class="mycontent" id="mycontent">
+               <h2></h2>
+               <ul>
+               <li><a href="#myheader">Header</a></li>
+               <li><a href="#mycontentone">Content one</a></li>
+               <li><a href="#mycontenttwo">Content two</a></li>
+               <li><a href="#mycontentthree">Content three</a></li>
+               <li><a href="#mycontentfour">Content four</a></li>
+               </ul>
+             </div>
+            <div class="contentone" id="mycontentone">
+                <img src="Images/panwaf.jpg" style="width:100%">
+                <h2><b>TITLE HEADING</b></h2>
+                <h5> Heavenly Match, September 30 2020</h5>
+                <p>A pancake (or hotcake, griddlecake, or flapjack) is a flat cake, often thin and round, prepared from a starch-based batter that may contain eggs, milk and butter and cooked on a hot surface.</p>
+                <p><button class="button"><b>READ MORE »</b></button></p>
+            </div>
+            <div class="contenttwo" id="mycontenttwo">
+               <Img src="Images/crepes.jpg" style="width:100%">
+                <h2><b>Crepes!!!</b></h2>
+                <h5>French crepes, September 23 2020</h5>
+                <p>A crêpe or crepe is a type of very thin pancake. Crêpes are usually of two types: sweet crêpes (crêpes sucrées) and savoury galettes (crêpes salées). Crêpes are served with a variety of fillings.</p>
+                <p><button class="button"><b>READ MORE »</b></button></p>
+            </div>
+             <div class="contentthree" id="mycontentthree">
+                <h2>In September</h2>
+                <ul>
+                    <li>Pancakes</li>
+                    <li>Waffles</li>
+                    <li>Crepes</li>
+                  </ul>
+                <h2>In August</h2>
+                <ul>
+                    <li>Churros</li>
+                    <li>Gelato</li>
+                    <li>Cheesecake</li>
+                    
+                </ul>
+            </div>
+            <div class="contentfour" id="mycontentfour">
+               <h2>Monthly Coverage</h2> 
+                <table>
+                    <tr>
+                      <th>September</th>
+                      <th>October</th>
+                    </tr>
+                    <tr>
+                      <td>Cannoli</td>
+                      <td>Pancakes</td>
+                    </tr>
+                    <tr>
+                      <td>Cake</td>
+                      <td>Waffles</td>
+                    </tr>
+                    <tr>
+                        <td>Sundaes</td>
+                        <td>Crepes</td>
+                      </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <th>July</th>
+                      <th>August</th>
+                    </tr>
+                    <tr>
+                      <td>Icecream Bowl</td>
+                      <td>Churros</td>
+                    </tr>
+                    <tr>
+                      <td>Milkshakes</td>
+                      <td>Gelato</td>
+                    </tr>
+                    <tr>
+                        <td>Tiramisu</td>
+                        <td>Cheesecake</td>
+                      </tr>
+                  </table>
+            </div>
+            <div class="footer">
+                <p>Copyright AB</p>
+            </div>
+
+       
+        </div>
+
+
+        
+        
+        <script>
+            //Adds the 'responsive' class to the nav when user clicks on the icon.
+        function myFunction() {
+          var x = document.getElementById("mynav");
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+        </script>
+        <script>
+            function myFunctiono() {
+              var x = document.getElementById("mycontent");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>
+      
+</body>
+</html>
+        
